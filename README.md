@@ -21,4 +21,4 @@ proxyTable: {
 }
 
 ### 界面展示
-![](https://github.com/Liyuan9/vue_elm/raw/master/screenimg/address.png)
+[![](/screenimg/address.png)]
