@@ -1,0 +1,53 @@
+body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4, h5, h6, i, b, textarea, button, input, select, figure, figcaption {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    color: #333;
+    font-weight: normal;
+    font-family: "Microsoft Yahei";
+    box-sizing: border-box;
+    -webkit-tap-highlight: transparent;      /* 只适用于ios，设置链接点击时会出现的背景色 */
+    -webkit-font-smoothing: antialiased;     
+    &:hover{
+        outline: none;
+    }
+}
+
+/* 消除input按钮在ios下的原生样式 */
+input[type="button"], input[type="submit"], input[type="search"], input[type="reset"]{
+    -webkit-appearance: none;
+}
+
+textarea {
+    -webkit-appearance: none;
+}
+
+/*  消除input, textarae 的required模式下在火狐出现红色边框 */
+input[required]:invalid, input:focus:invalid, textarea[required]:invalid, textarea:focus:invalid {
+    box-shadow: none;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background: #f5f5f5;
+}
+
+.clear:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.clear{
+    zoom:1;
+}
+
+.ellipsis{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
